@@ -1,6 +1,15 @@
 {
   "name": "typescript-project-refs-babel-node",
+  "private": true,
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dedup": "yarn-deduplicate -s fewer yarn.lock"
+  },
+  "devDependencies": {
+    "yarn-deduplicate": "^1.1.1"
+  }
 }
