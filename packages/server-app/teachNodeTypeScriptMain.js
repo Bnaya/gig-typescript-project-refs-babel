@@ -34,7 +34,7 @@ Module.prototype.require = function teachNodeTypeScriptMainRequireWrapper(
       } catch (e) {
         console.error(e);
         console.log("who let the dogs out");
-        throw new Error("im outta here");
+        process.exit(666);
       }
     }
   } catch (e) {
