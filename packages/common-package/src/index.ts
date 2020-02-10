@@ -1,3 +1,3 @@
 export function imaCommonFunction() {
-    return "imaCommonFunction";
+  return "imaCommonFunction";
 }

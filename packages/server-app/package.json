@@ -10,6 +10,11 @@
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1",
     "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start:dev": "babel-node -r ./teachNodeTypeScriptMain.js -x '.ts','.js' src/main.ts"
   }
 }

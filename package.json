@@ -7,9 +7,24 @@
     "packages/*"
   ],
   "scripts": {
-    "dedup": "yarn-deduplicate -s fewer yarn.lock"
+    "dedup": "yarn-deduplicate -s fewer yarn.lock",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx \"packages\""
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "typescript": "^3.7.5",
     "yarn-deduplicate": "^1.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
   }
 }
