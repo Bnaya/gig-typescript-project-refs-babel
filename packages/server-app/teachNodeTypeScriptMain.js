@@ -1,6 +1,12 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
+require("@babel/register")({
+  rootMode: "upward",
+  ignore: [/node_modules/],
+  extensions: [".js", ".ts"] // not relevant
+});
+
 const Module = require("module");
 const path = require("path");
 
