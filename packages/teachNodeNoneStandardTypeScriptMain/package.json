@@ -1,0 +1,6 @@
+{
+  "name": "@local-namespace/teach-node-none-standard-typescript-main",
+  "main": "./teachNodeNoneStandardTypeScriptMain.js",
+  "version": "0.0.1",
+  "private": true
+}
