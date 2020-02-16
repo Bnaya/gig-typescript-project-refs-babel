@@ -2,11 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { imaCommonFunction } from "@local-namespace/common-package";
+
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          {imaCommonFunction()}
+        </p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>

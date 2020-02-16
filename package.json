@@ -1,5 +1,5 @@
 {
-  "name": "typescript-project-refs-babel-node",
+  "name": "typescript-project-refs-babel",
   "private": true,
   "version": "1.0.0",
   "license": "MIT",
@@ -26,5 +26,7 @@
     "hooks": {
       "pre-push": "yarn lint"
     }
+  },
+  "resolutions": {
   }
 }
