@@ -1,0 +1,9 @@
+{
+  "name": "@local-namespace/jest-none-standard-typescript-main-resolver",
+  "main": "./index.js",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@local-namespace/teach-node-none-standard-typescript-main": "*"
+  }
+}

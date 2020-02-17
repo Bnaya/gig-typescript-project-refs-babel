@@ -1,3 +1,1 @@
-export function imaCommonFunction() {
-  return "imaCommonFunction";
-}
+export { imaCommonFunction } from "./imaCommonFunction";

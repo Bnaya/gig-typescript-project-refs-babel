@@ -7,12 +7,19 @@ module.exports = function ({ env }) {
       enableTypeChecking: false
     },
     webpack: {
-      configure: (webpackConfig, { env, paths }) => {
+      configure(webpackConfig, { env, paths }) {
         webpackConfig.resolve.mainFields = [
           // this is the `magic`
           'noneStandardTypeScriptMain',
           'browser', 'module', 'main']
         return webpackConfig;
+      }
+    },
+    jest: {
+      configure(jestConfig) {
+        jestConfig.resolver =  "@local-namespace/jest-none-standard-typescript-main-resolver";
+
+        return jestConfig;
       }
     }
   };
