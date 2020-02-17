@@ -35,10 +35,10 @@ function resolveTypeScriptMainIfApplicable(
   // console.log(inputStr);
 
   try {
-    if (inputStr.includes("@local-namespace/common-package")) {
-      console.log(inputStr);
-      // while (true) {}
-    }
+    // if (inputStr.includes("@local-namespace/common-package")) {
+    //   console.log(inputStr);
+    //   // while (true) {}
+    // }
 
     // find the package.json of the required package
     const packageJsonPath = require.resolve(
@@ -51,10 +51,10 @@ function resolveTypeScriptMainIfApplicable(
     // Consider: Should we use the requirer require?
     // Read package.json content
     const packageJsonContent = require(packageJsonPath);
-    if (inputStr.includes("@local-namespace/common-package")) {
-      console.log(packageJsonContent);
-      while (true) {}
-    }
+    // if (inputStr.includes("@local-namespace/common-package")) {
+    //   console.log(packageJsonContent);
+    //   while (true) {}
+    // }
 
     // Check if we have the "typescriptMain field for the package
     if (packageJsonContent[mainFieldName]) {
